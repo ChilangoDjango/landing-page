@@ -1,0 +1,48 @@
+body{
+	background: #efefef;
+	font-size: 20px;
+}
+h1{
+	margin: .3em 0 0 0;
+	text-transform: uppercase;
+}
+h2{
+	margin: 0 0 .5em 0;
+	font-weight: 100;
+}
+.count-down-container{
+	background: rgba(0,0,0,.5);
+	bottom: 0;
+	filter: blur(5px);
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+}
+.count-down-content{
+	color: white;
+	padding: 0 .7em;
+}
+.wrapper{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}

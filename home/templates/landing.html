@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load cache %}
+
+{% block head %}
+	{% load static from staticfiles %}
+	<link rel="stylesheet" href="{% static "css/landing.css" %}" />
+{% endblock %}
+
+{% cache 10000 landing %}
+
+	{% block body %}
+		<div class="wrapper" style="background-image: url({% static 'img/landing/wrapper.jpg' %});">
+			<div class="count-down-container">
+				<div class="count-down-content">
+					<h1>Mi primera landing con Django</h1>
+					<h2>Chilango Django</h2>
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+
+{% endcache %}

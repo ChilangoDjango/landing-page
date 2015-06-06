@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>{{ title }}</title>
+
+	<!-- Styles -->
+	{% load static from staticfiles %}
+	<link rel="stylesheet" href="{% static "css/libraries/normalize.css" %}" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="{% static "css/base.css" %}" />
+	<!-- Styles -->
+
+	<link rel="shortcut icon" href="{% static "img/base/favicon.png" %}" />
+
+	{% block head %} {% endblock %}
+
+</head>
+<body>
+
+	{% block body %} {% endblock %}
+
+	
+</body>
+</html>
